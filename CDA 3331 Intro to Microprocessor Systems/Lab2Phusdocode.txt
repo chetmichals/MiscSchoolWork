@@ -1,0 +1,36 @@
+Move Varrable to d0.
+
+Find X (d1)
+set d1 to 1 //Skips loop where only 0 factorial is calculated
+set d4 to d0.
+X Loop
+set d5 to d4.
+set d6 to d4.
+d5 = d5 *5
+d1 = d1 + d5
+set d5 to 1
+d6 = d6/3
+d7 = d6
+swap d7
+compair d7 with 0
+if d7 is not z, add 1 to d6.
+
+Factorial Loop
+d5 = d6 * d5
+subq #1, d6
+Loop if not zero
+
+d1 = d1 + d5
+subq #1, d6
+loop if not zero
+
+
+Find Y (d2)
+d4 = d0
+d4 = d4 + 2
+d2 = d4
+d2 = d2 * d4
+
+Find F (d3)
+f = x
+f = f / y
